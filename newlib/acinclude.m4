@@ -173,9 +173,9 @@ dnl normal versions of a library), tasteless as that idea is.
   if test "$ac_test_CFLAGS" = set; then
     CFLAGS="$ac_save_CFLAGS"
   elif test $ac_cv_prog_cc_g = yes; then
-    CFLAGS="-g -O2 -D_FORTIFY_SOURCE=0"
+    CFLAGS="-g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0"
   else
-    CFLAGS="-O2 -D_FORTIFY_SOURCE=0"
+    CFLAGS="-O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0"
   fi
 else
   GCC=
